@@ -1,11 +1,30 @@
+html {
+    background-color: rgb(192, 189, 189);
+}
+
 header {
     background-color: #521751;
 }
+
 h1 {
     color: white;
     font-size: 20px;
+    padding: 10px;
+    border: 0 dashed red;
+    margin: 0;
 }
+
 a {
     text-decoration: none;
     color: black;
+}
+
+.berg-text {
+    background-color: aqua;
+    padding: 3px;
+}
+
+.berg-text p {
+    background-color: blue;
+    margin: 0;
 }
