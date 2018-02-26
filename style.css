@@ -24,24 +24,41 @@ a {
     color: white;
     /* font-size: 20px;
     border: 0 dashed red; */
-    padding: 10px;
+    padding: 10px 0;
     margin: 0;
     text-align: center;
+}
+
+/* nav */
+.navigation {
+    text-align: center;
+}
+.navigation li, .navigation a {
+    display: inline-block;
+    width: 70px;
+    background-color: gray;
+    padding: 0;
 }
 
 /* <main> */
 .berg-text {
     background-color: aqua;
-    padding: 3px;
+    padding: 0px;
 }
 .berg-text p {
     background-color: blue;
     margin: 0;
+    display: inline-block;
+    width: 50%;
 }
-
-/* <footer> */
 .feedback {
     background-color: #521751;
     color: white;
     text-align: center;
+}
+
+/* <footer> */
+.bremen-info img, .bremen-info span {
+    display: inline;
+    vertical-align: middle;
 }
