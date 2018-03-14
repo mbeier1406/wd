@@ -42,23 +42,48 @@ a {
 
 /* <main> */
 .berg-text {
-    background-color: aqua;
-    padding: 0px;
+    background-color: #521751;
+    padding: 0;
+    display: flex;
 }
 .berg-text p {
-    background-color: blue;
-    margin: 0;
-    display: inline-block;
-    width: 50%;
-}
-.feedback {
     background-color: #521751;
     color: white;
     text-align: center;
+    margin: 0;
+    width: 50%;
+}
+.berg-bilder {
+    display: flex;
+}
+.berg-bilder img {
+    width: 50%;
+    height: 100%;
+}
+.feedback {
+    position: relative;
+    bottom: 18.4px;
+    background-color: #521751;
+    color: white;
+    text-align: center;
+    margin: 0;
 }
 
 /* <footer> */
-.bremen-info img, .bremen-info span {
-    display: inline;
-    vertical-align: middle;
+.bremen-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    border: 1px solid black;
+    background-color: white;
+    margin: 10px;
+}
+.bremen-info img {
+    width: 120px;
+    height: 100px;
+}
+.bremen-info span {
+    width: 350px;
+    text-align: center;
 }
