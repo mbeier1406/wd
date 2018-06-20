@@ -15,7 +15,7 @@ a {
 .fixed-bar {
     height: 70px;
 }
-.berge-titel {
+.cid-titel {
     position: fixed;
     top: 0px;
     width: 100%;
@@ -41,22 +41,22 @@ a {
 }
 
 /* <main> */
-.berg-text {
+.cid-text {
     background-color: #521751;
     padding: 0;
     display: flex;
 }
-.berg-text p {
+.cid-text p {
     background-color: #521751;
     color: white;
     text-align: center;
     margin: 0;
     width: 50%;
 }
-.berg-bilder {
+.cid-bilder {
     display: flex;
 }
-.berg-bilder img {
+.cid-bilder img {
     width: 50%;
     height: 100%;
 }
@@ -70,7 +70,7 @@ a {
 }
 
 /* <footer> */
-.bremen-info {
+.cid-info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,11 +79,11 @@ a {
     background-color: white;
     margin: 10px;
 }
-.bremen-info img {
+.cid-info img {
     width: 120px;
     height: 100px;
 }
-.bremen-info span {
+.cid-info span {
     width: 350px;
     text-align: center;
 }
