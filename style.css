@@ -1,5 +1,7 @@
 html {
     background-color: rgb(192, 189, 189);
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -22,8 +24,9 @@ a {
     height: 40px;
     background-color: #521751;
     color: white;
-    /* font-size: 20px;
-    border: 0 dashed red; */
+    font-size: 32px; /* fall-back */
+    font-size: 2rem;
+    /* border: 0 dashed red; */
     padding: 10px 0;
     margin: 0;
     text-align: center;
@@ -35,23 +38,15 @@ a {
 }
 .navigation li, .navigation a {
     display: inline-block;
-    width: 70px;
+    width: 20%;
     background-color: gray;
     padding: 0;
+    font-size: 0.9rem;
 }
 
 /* <main> */
 .cid-text {
-    background-color: #521751;
-    padding: 0;
-    display: flex;
-}
-.cid-text p {
-    background-color: #521751;
-    color: white;
-    text-align: center;
-    margin: 0;
-    width: 50%;
+    display: none;
 }
 .cid-bilder {
     display: flex;
@@ -59,8 +54,8 @@ a {
 }
 .cid-bilder img {
     box-sizing: border-box;
-    width: 50%;
-    min-width: 200px;
+    width: 100%;
+    /* min-width: 200px; */
     height: 100%;
 }
 .feedback {
@@ -69,6 +64,7 @@ a {
     background-color: #521751;
     color: white;
     text-align: center;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -90,4 +86,31 @@ a {
 .cid-info span {
     width: 350px;
     text-align: center;
+    font-size: 1rem;
+}
+
+@media (min-width: 400px) {
+    .navigation li {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .cid-bilder img {
+        width: 50%;
+        min-width: 200px;
+    }
+    .cid-text {
+        background-color: #521751;
+        padding: 0;
+        display: flex;
+    }
+    .cid-text p {
+        background-color: #521751;
+        color: white;
+        text-align: center;
+        margin: 0;
+        width: 50%;
+        font-size: 1rem;
+    }
 }
