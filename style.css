@@ -13,6 +13,14 @@ a {
     color: black;
 }
 
+img:hover {
+    cursor: pointer;
+}
+
+a:active {
+    color: #521751;
+}
+
 /* <header> */
 .fixed-bar {
     height: 70px;
