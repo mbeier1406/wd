@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Git Kompendium</title>
+        <link rel="shortcut icon" href="../images/git_logo.png"/> <!-- fav icon -->
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <header class="fixed-bar"><h1 class="cid-titel">Kurze Zusammenfassung Git-Befehle</h1></header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <main class="git">
+            <div class="git-titel">
+                <p>Initialisierung</p>
+                <div style="font-family: courier; color: rgb(17, 16, 16)">
+                    <pre>
+$ git config --global user.name "Martin Beier"
+$ git config --global user.email Martin.Beier@gmx.de
+$ git config --global core.editor "'/usr/bin/vi' -b" 
+$ git config --list
+user.name=Martin Beier
+user.email=Martin.Beier@gmx.de
+core.editor='/usr/bin/vi' -b
+$ more ~/.gitconfig 
+[user]
+        name = Martin Beier
+        email = Martin.Beier@gmx.de
+[core]
+        editor = '/usr/bin/vi' -b
+$ git config core.editor
+'/usr/bin/vi' -b
+<span style="color: grey"># man pages anzeigen</span>
+$ git help <i>config</i>
+$ man git-<i>config</i>
+$ man git <i>config</i> --help
+<span style="color: grey"># Kurzinfo zu Optionen</span>
+$ git config -h
+# Hilfe in <a href="https://freenode.net">https://freenode.net</a> <span style="font-weight:bold; font: courier">#git #github</span>
+                    </pre>
+                </div>
+            </div>
+            <div class="git-titel">
+                <p>Grundlagen</p>
+                <div  style="font-family: courier; color: rgb(17, 16, 16)">
+                    <pre>
+$ git init # im Projektverzeichnis
+                    </pre>
+                </div>
+            </div>
+            <div class="git-titel">
+                <p>Branching</p>
+                <div style="font-family: courier; color: rgb(17, 16, 16)">
+                    <pre>
+$ git branch &lt;TICKET&gt;
+                    </pre>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Ende
+        </footer>
+    </body>
+</html>
