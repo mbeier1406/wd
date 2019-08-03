@@ -26,15 +26,11 @@ a:active {
     color: #521751;
 }
 
-/*
- * Hauptseite
- */
-
 /* <header> */
 .fixed-bar {
     height: 70px;
 }
-.cid-titel {
+.titel {
     position: fixed;
     top: 0;
     width: 100%;
@@ -62,106 +58,5 @@ a:active {
 }
 
 /* <main> */
-.cid-text {
-    display: none;
-}
-.cid-bilder {
-    display: flex;
-    flex-wrap: wrap;
-}
-.cid-bilder img {
-    box-sizing: border-box;
-    width: 100%;
-    /* min-width: 200px; */
-    height: 100%;
-}
-.feedback {
-    position: relative;
-    bottom: 18.4px;
-    background-color: #521751;
-    color: white;
-    text-align: center;
-    font-size: 1rem;
-    margin: 0;
-}
 
 /* <footer> */
-.cid-info {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    background-color: white;
-    margin: 10px;
-}
-.cid-info img {
-    width: 120px;
-    height: 100px;
-    /*  flex: 1 1 auto; / * flex-grow flex-shrink flex-basis */
-}
-.cid-info span {
-    width: 350px;
-    text-align: center;
-    font-size: 1rem;
-}
-
-@media (min-width: 400px) {
-    .navigation li {
-        font-size: 1.2rem;
-    }
-}
-
-@media (min-width: 700px) {
-    .cid-bilder img {
-        width: 50%;
-        min-width: 200px;
-    }
-    .cid-text {
-        background-color: #521751;
-        padding: 0;
-        display: flex;
-    }
-    .cid-text p {
-        background-color: #521751;
-        color: white;
-        text-align: center;
-        margin: 0;
-        width: 50%;
-        font-size: 1rem;
-    }
-}
-
-
-/*
- * GIT Kompendium
- */
-
- .git {
-    display: flex;
-    flex-flow: wrap;
-    position: relative;
- }
-
- .git-titel {
-     margin: 5px;
-     position: relative;
-     top: 10px;
-     width: 550px;
-     font-size: larger;
-}
-
-.git-titel p, .git-titel div {
-    border: 1px solid black;
-    padding: 0px 0px 0px 10px;;
-}
-
-
-.git-titel p {
-    background-color: #521751;
-    color: white;
-    text-align: center;
-    margin: 0;
-    font-size: large;
-}
-
