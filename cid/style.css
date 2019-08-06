@@ -69,6 +69,7 @@
     margin: 10px;
 }
 .cid-info img {
+    box-sizing: content-box;
     width: 120px;
     height: 100px;
     /*  flex: 1 1 auto; / * flex-grow flex-shrink flex-basis */

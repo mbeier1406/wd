@@ -1,0 +1,41 @@
+
+/*
+ * Überblick HTML, CSS und JavaScript
+ */
+
+/*  main */
+.htmlcssjs {
+    display: flex;
+    flex-flow: wrap;
+    position: relative;
+ }
+
+ .htmlcssjs-titel {
+    margin: 5px;
+    position: relative;
+    top: 10px;
+    width: 550px;
+    font-size: larger;
+}
+
+.htmlcssjs-titel p, .htmlcssjs-titel div {
+   border: 1px solid black;
+   padding: 0px 0px 0px 10px;;
+}
+
+.htmlcssjs-titel div {
+   margin: 10px 0 0;
+}
+
+.htmlcssjs-titel p {
+   background-color: #521751;
+   color: white;
+   text-align: center;
+   margin: 0;
+   font-size: large;
+}
+
+.htmlcssjs-titel a {
+    text-decoration: underline;
+    color: blue;
+}
