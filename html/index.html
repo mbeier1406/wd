@@ -139,6 +139,18 @@
                     </ul>
                 </div>
             </div>    
+            <div class="htmlcssjs-titel">
+                <p>CSS: Media Queries</p>
+                <div style="font-family: courier; color: rgb(17, 16, 16)" class="htmlcssjs-mediaqueries">
+                    <br/><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">MDN web docs - media queries</a>
+                    <ul>
+                        <li><b>Mobile-first-Ansatz beachten!!!</b> Webseite erst für kleine Devices testen!</li>
+                        <li>Die Simulation der Darstellung der Webseite in mobilen Endgeräten kann über Chrome Developer Tools simuliert werden: <a href="https://www.youtube.com/watch?v=wFqkWczC0jA&list=PL55RiY5tL51rv_vo3TM3Byu71RYchX_l_&index=12"><img src="../images/devtool-mobile.png"></a></li>
+                        <li>Falls der Browser die Größe des Viewports nicht automatisch ermitteln kann, im <i>Header</i> folgendes definieren: <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/></code></li>
+                        <li>Definition über <code>@media (&lt;Bedingung>) { &lt;CSS> }</code>; Beispiel für Devicegrößen größer 400 Pixel etwas nicht anzeigen <code>@media (min-width: 400px) { .selector { display: none; } }</code></li>
+                    </ul>
+                </div>
+            </div>        
         </main>
     </body>
 </html>
