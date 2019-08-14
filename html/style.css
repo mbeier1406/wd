@@ -40,3 +40,8 @@
     text-decoration: underline;
     color: blue;
 }
+
+.htmlcssjs-display-flex-items a, .htmlcssjs-display-flex-container a {
+    text-decoration: none;
+    color: black;
+}

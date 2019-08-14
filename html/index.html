@@ -55,18 +55,29 @@
             </div>
             <div class="htmlcssjs-titel">
                 <p>CSS: Display</p>
-                <div style="font-family: courier; color: rgb(17, 16, 16)" class="htmlcssjs-boxmodel">
+                <div style="font-family: courier; color: rgb(17, 16, 16)" class="htmlcssjs-display">
                     <br/><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">MDN web docs - display</a>
                     <ul>
-                        <li>Display Options: <code>block</code>, <code>inline</code>, <code>inline-block</code>, <code>none</code> usw. (zum Beispiel <code>display: none</code>)</li>
+                        <li>Display Options: <code>block</code>, <code>inline</code>, <code>inline-block</code>, <code>flex</code>, <code>none</code> usw. (zum Beispiel <code>display: none</code>)</li>
                         <li><code>inline</code>: Ausrichtung der Elemente  möglich (Beispiel <code>vertical-align: middle</code>)</li>
                         <li><code>block</code>, <code>inline-block</code>: Properties wie <code>width</code> und <code>heigth</code> können verwendet werden</li>
                         <li><code>none</code>: Elemente verstecken (für JavaScript)</li>
                     </ul>
                     <div class="w3-bar"></div>
-                    <br/><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">MDN web docs - display flexbox</a>:
+                    <br/><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">MDN web docs - display flexbox</a>
+                    <ul>
+                        <li><u>Flex Container</u>: Definitionen betreffen alle Flex Items</li>
+                        <li><u>Flex Items</u>: Jedes HTML-Element im Flex Container kann individuell angepasst werden</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="htmlcssjs-titel">
+                <p>CSS: Display Flex (Flex Container)</p>
+                <div style="font-family: courier; color: rgb(17, 16, 16)" class="htmlcssjs-display-flex-container">
+                    <br/><a href="https://www.youtube.com/watch?v=siKKg8Y_tQY"><i>Flex Container</i></a>:
                     <ul>
                         <li>Parent- oder Wrapping-Element wird Flex Container durch <code>display: flex</code>, weitere Properties sind <code>flex-flow</code>, <code>justify-content</code>, <code>align-content</code> oder <code>align-items</code></li>
+                        <li>Die Properties werden im CSS des <i>Flex Containers</i> definiert!</li>
                         <ul>
                             <li><code>flex-flow</code> benötigt <code>&lt;flex-direction&gt;</code> und <code>&lt;flex-wrap&gt;</code> (Besispiel <code>flex-flow: row nowrap</code>)</li>
                             <img src="../images/flex-flow.png" alt="Flex Flow Achsen" width="400px"/>
@@ -74,7 +85,18 @@
                             <li><code>justify-content</code> passt die Items an die <i>Main Axis</i> an: <code>stretch</code>, <code>center</code>, <code>flex-start</code> usw.</li>
                             <li><code>align-content</code> passt Platz entlang der <i>Cross Axis</i> (nur bei mehreren Zeilen/Reihen) an</li>
                         </ul>
-                        <li>Enthaltene Elemente werden Flex Items, weitere Properties sind <code>order</code>, <code>flex</code> oder <code>align-self</code></li>
+                    <li>Enthaltene Elemente werden Flex Items, weitere Properties sind <code>order</code>, <code>flex</code> oder <code>align-self</code></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="htmlcssjs-titel">
+                <p>CSS: Display Flex (Flex items)</p>
+                <div style="font-family: courier; color: rgb(17, 16, 16)" class="htmlcssjs-display-flex-items">
+                    <br/><a href="https://www.youtube.com/watch?v=RdlEEfx912M"><i>Flex Items</i></a>:
+                    <ul>
+                        <li>Die Properties werden im CSS des jeweiligen <i>Flex Items</i> definiert, das dann eine eigene Klasse benötigt!</li>
+                        <li><code>order</code> definiert die Reihenfolge (entlang der Main Axis)</li>
+                        <li><code>align-self</code> definiert die Position (entlang der Cross Axis)</li>
                     </ul>
                 </div>
             </div>
