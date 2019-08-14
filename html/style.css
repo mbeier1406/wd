@@ -41,7 +41,8 @@
     color: blue;
 }
 
-.htmlcssjs-display-flex-items a, .htmlcssjs-display-flex-container a {
+.htmlcssjs-boxmodel ul a, .htmlcssjs-position ul a, .htmlcssjs-display ul a,
+.htmlcssjs-display-flex-items a, .htmlcssjs-display-flex-container a, .htmlcssjs-boxsizing ul a {
     text-decoration: none;
     color: black;
 }

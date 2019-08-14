@@ -30,8 +30,9 @@
             <div class="htmlcssjs-titel">
                 <p>CSS: The Box Model</p>
                 <div style="font-family: courier; color: rgb(17, 16, 16)" class="htmlcssjs-boxmodel">
+                    <br/><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model">MDN web docs - box model</a>
                     <ul>
-                        <li>content -> padding -> border -> margin</li>
+                        <li><a href="https://www.youtube.com/watch?v=sZHICEVdvEI&list=PL55RiY5tL51rv_vo3TM3Byu71RYchX_l_&index=6">content -> padding -> border -> margin</a></li>
                         <li>Rahmen: <code>border: &lt;Breite&gt; &lt;Typ&gt; &lt;Farbe&gt;</code> (Beispiel <code>border: 5px solid red;</code>)</li>
                         <li><u>Gleichmäiger Abstand</u>: ein Wert (Beispiel <code>padding: 10px;</code>).</li>
                         <li><u>Gleichmäiger Abstand</u> oben/unten und rechts/links: zwei Werte (Beispiel <code>padding: 10px 5px;</code>).</li>
@@ -42,9 +43,10 @@
             </div>
             <div class="htmlcssjs-titel">
                 <p>CSS: Position</p>
-                <div style="font-family: courier; color: rgb(17, 16, 16)" class="htmlcssjs-boxmodel">
-                    <ul>
-                            <li><i>Document Flow</i>: Position ist <code>static</code>, <code>absolute</code>, <code>relative</code> oder <code>fixed</code> (zum Beispiel <code>position: relative</code>)</li>
+                <div style="font-family: courier; color: rgb(17, 16, 16)" class="htmlcssjs-position">
+                        <br/><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">MDN web docs - position</a>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=oaZWpGUy414&list=PL55RiY5tL51rv_vo3TM3Byu71RYchX_l_&index=7"><i>Document Flow</i></a>: Position ist <code>static</code>, <code>absolute</code>, <code>relative</code> oder <code>fixed</code> (zum Beispiel <code>position: relative</code>)</li>
                             <li><i>Position</i> (<code>top</code>, <code>right</code>,<code>bottom</code> oder <code>left</code>) und <i>Positioning Context</i> (viewport oder html-Element)</li>
                             <li>Position Context immer zum Containing Element mit einem definierten Position-Prperty (-Context)</li>
                             <li>Position Absolute und Fixed: nicht mehr im normalen Document-Flow bedeutet, dass Block-Level-Element inline sind!</li>
@@ -58,7 +60,7 @@
                 <div style="font-family: courier; color: rgb(17, 16, 16)" class="htmlcssjs-display">
                     <br/><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">MDN web docs - display</a>
                     <ul>
-                        <li>Display Options: <code>block</code>, <code>inline</code>, <code>inline-block</code>, <code>flex</code>, <code>none</code> usw. (zum Beispiel <code>display: none</code>)</li>
+                        <li><a href="https://www.youtube.com/watch?v=YS2bTVYBoK8&list=PL55RiY5tL51rv_vo3TM3Byu71RYchX_l_&index=8">Display Options</a>: <code>block</code>, <code>inline</code>, <code>inline-block</code>, <code>flex</code>, <code>none</code> usw. (zum Beispiel <code>display: none</code>)</li>
                         <li><code>inline</code>: Ausrichtung der Elemente  möglich (Beispiel <code>vertical-align: middle</code>)</li>
                         <li><code>block</code>, <code>inline-block</code>: Properties wie <code>width</code> und <code>heigth</code> können verwendet werden</li>
                         <li><code>none</code>: Elemente verstecken (für JavaScript)</li>
@@ -96,7 +98,27 @@
                     <ul>
                         <li>Die Properties werden im CSS des jeweiligen <i>Flex Items</i> definiert, das dann eine eigene Klasse benötigt!</li>
                         <li><code>order</code> definiert die Reihenfolge (entlang der Main Axis)</li>
-                        <li><code>align-self</code> definiert die Position (entlang der Cross Axis)</li>
+                        <li><code>align-self</code> definiert die Position (entlang der Cross Axis) - Beispiel <code>align-self: flex-start</code></li>
+                        <li><code>flex</code> definiert <code>flex-grow</code>, <code>flex-shrink</code> und <code>flex-basis</code> (entlang der Main Axis) - Beispiel <code>flex: 0 1 auto</code></li>
+                        <li><code>flex-grow</code> der angegebene Faktor definiert in welchem Verhältnis untereinander die Flex Items de freien Platz im Viewport belegen</li>
+                        <li><code>flex-shrink</code> der angegebene Faktor definiert in welchem Verhältnis untereinander die Flex Items kleiner werden, bis die Größe des Contents erreicht ist</li>
+                        <li><code>flex-basis</code> Größe des Flex Items entlang der Main Axis in Pixel etc. oder <code>auto</code> für die vorgegebene <i>width</i> oder <i>height</i> je nach <i>Flex Flow</i> des Containers</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="htmlcssjs-titel">
+                <p>CSS: Box Sizing</p>
+                <div style="font-family: courier; color: rgb(17, 16, 16)" class="htmlcssjs-boxsizing">
+                    <br/><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing">MDN web docs - box-sizing</a>
+                    <ul>
+                        <li>Das Property <a href="https://www.youtube.com/watch?v=dLGr1Qb2nKc&list=PL55RiY5tL51rv_vo3TM3Byu71RYchX_l_&index=10"><code>box-sizing</code></a> legt fest, auf welche Element des Box Models sich Attribute wie <code>width</code> oder <code>height</code> beziehen</li>
+                        <li>Werte <code>content-box</code> für den Content und <code>border-box</code> für alles außer dem <i>Margin</i></li>
+                        <img src="../images/box-sizing.png" alt="Box Sizing" width="465px"/>
+                        <li>Prozentuale Angaben beziehen sich immer auf den <i>Containing Bloc</i>, der je nach Position-Property definiert ist:</li>
+                        <span>
+                            <img src="../images/box-sizing1.png" alt="Box Sizing Position" width="40%"/>
+                            <img src="../images/box-sizing2.png" alt="Box Sizing Grundregeln" width="53%"/>
+                        </span>
                     </ul>
                 </div>
             </div>
