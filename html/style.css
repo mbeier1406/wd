@@ -42,7 +42,8 @@
 }
 
 .htmlcssjs-boxmodel ul a, .htmlcssjs-position ul a, .htmlcssjs-display ul a, .htmlcssjs-display-flex-items a,
-.htmlcssjs-display-flex-container a, .htmlcssjs-boxsizing ul a, .htmlcssjs-fonts ul a, .htmlcssjs-mediaqueries ul a {
+.htmlcssjs-display-flex-container a, .htmlcssjs-boxsizing ul a, .htmlcssjs-fonts ul a, .htmlcssjs-mediaqueries ul a,
+.htmlcssjs-pseudoclasses ul a {
     text-decoration: none;
     color: black;
 }
