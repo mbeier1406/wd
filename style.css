@@ -5,7 +5,7 @@
 
  html {
     background-color: rgb(192, 189, 189);
-    font-size: 100%;
+    font-size: 100%; /* wir verwenden die Standardeinstellung des Browseres wo nicht anders angegeben (16px) */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -39,7 +39,7 @@ a:active {
     background-color: #521751;
     color: white;
     font-size: 32px; /* fall-back */
-    font-size: 2rem;
+    font-size: 2rem; /* 2x so gross wie das root-Element HTML */
     /* border: 0 dashed red; */
     padding: 10px 0;
     margin: 0;
