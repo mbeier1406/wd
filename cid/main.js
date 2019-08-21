@@ -1,7 +1,7 @@
-var imgCid1 = document.querySelector('.cid-bild');
+var imgCid = document.querySelectorAll('.cid-bild');
 var backdrop = document.querySelector('.backdrop');
 var modal = document.querySelector('.modal');
-console.log(imgCid1);
+console.log(imgCid);
 
 function openModal() {
     backdrop.style.display = 'block';
@@ -13,5 +13,7 @@ function closeModal() {
     modal.style.display = 'none';
 }
 
-imgCid1.onclick = openModal;
+for ( var i=0; i < imgCid.length; i++ ) {
+    imgCid[i].addEventListener('click', openModal);
+}
 backdrop.onclick = closeModal;
