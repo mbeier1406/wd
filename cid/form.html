@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Eingabe</title>
+        <link rel="shortcut icon" href="../images/2012-05-25 20.25.24.jpg">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./form.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    </head>
+    <body>
+        <header class="cid-title-bar"><h1 class="cid-titel">Eingaben</h1></header>
+        <nav>
+            <ul class="cid-navigation">
+                <li><a href="./index.html">Zu Cid</a></li>
+                <li><a href="../index.html">Hauptseite</a></li>
+            </ul>
+        </nav>
+        <main >
+            <form class="form"> <!-- action="url" method="post" -->
+                <label for="input-name">Name</label>
+                <input type="text" name="name" class="form-input" id="input-name" oninput="checkInput()"/>
+                <label for="input-mail">Mail</label>
+                <input type="email" name="email" class="form-input" id="input-mail" value="me@example.com" oninput="checkInput()"/>
+                <label for="input-message">Your Message</label>
+                <textarea name="message" cols="30" rows="10" class="form-input" id="input-message" oninput="checkInput()">Nachricht...</textarea>
+                <button class="submit-button" disabled type="button">Fertig</button>
+            </form>
+        </main>
+        <script src="form.js"></script>
+    </body>
+</html>
