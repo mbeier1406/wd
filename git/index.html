@@ -21,6 +21,7 @@
                 <p>Initialisierung</p>
                 <div style="font-family: courier; color: rgb(17, 16, 16)">
                     <pre>
+$ git config --list --show-origin # Konfiguration anzeigen
 $ git config --global user.name "Martin Beier"
 $ git config --global user.email Martin.Beier@gmx.de
 $ git config --global core.editor "'/usr/bin/vi' -b" 
@@ -39,7 +40,7 @@ $ git config core.editor
 <span style="color: grey"># man pages anzeigen</span>
 $ git help <i>config</i>
 $ man git-<i>config</i>
-$ man git <i>config</i> --help
+$ git <i>config</i> --help
 <span style="color: grey"># Kurzinfo zu Optionen</span>
 $ git config -h
 # Hilfe in <a href="https://freenode.net">https://freenode.net</a> <span style="font-weight:bold; font: courier">#git #github</span>
@@ -47,11 +48,30 @@ $ git config -h
                 </div>
             </div>
             <div class="git-titel">
-                <p>Grundlagen</p>
+                <p>Grundlagen Teil I</p>
                 <div  style="font-family: courier; color: rgb(17, 16, 16)">
+                    <font face="Roboto" size="3">Die drei Zustände einer Datei:</font>
+                    <img src="../images/git_three_states.JPG" alt="The three states of a file"/>
                     <pre>
-$ git init # im Projektverzeichnis
+<span style="color: grey"># Repository anlegen: clone oder init</span>
+$ git init <span style="color: grey"># im Projektverzeichnis</span>
+$ git clone &lt;URL&gt;
+<span style="color: grey"># Dateien verwalten</span>
+$ git add ...
+$ git commit --message "..." [...]
+$ git status ... [--short]
+<br/><font face="Roboto" size="3">Die drei wichtigsten Teile eines Projektes:</font>
+<img src="../images/git_lifecycle.JPG" alt="Working tree, staging area and Git repository"/>
                     </pre>
+                </div>
+            </div>
+            <div class="git-titel">
+                <p>Grundlagen Teil II</p>
+                <div>
+                    Regeln für ein <code>.gitignore:</code>
+                    <ul>
+                        <li>Leere Zeilen und Zeilen beginnend mit <font color="red">#</font> werden ignoriert</li>
+                    </ul>
                 </div>
             </div>
             <div class="git-titel">

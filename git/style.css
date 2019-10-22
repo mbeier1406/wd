@@ -32,3 +32,8 @@
     margin: 0;
     font-size: large;
 }
+
+.git-titel img {
+    width: 500px;
+    margin: 10px;
+}
